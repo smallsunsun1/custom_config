@@ -1,0 +1,8 @@
+bazel --verbose_failures (can see all failure info)
+bazel build -- //... -//:xxx (用于过滤编译后者)
+
+
+## 一些网站
+bazel overview (https://docs.bazel.build/versions/4.1.0/bazel-overview.html)
+bazel command line option相关 (https://docs.bazel.build/versions/main/command-line-reference.html)
+bazel best practice (https://docs.bazel.build/versions/main/best-practices.html)
