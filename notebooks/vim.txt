@@ -1,0 +1,8 @@
+CTRL+n 普通关键字
+CTRL+n CTRL+x 当前缓冲区关键字
+CTRL+x CTRL+i 文件关键字
+CTRL+x CTRL+] 标签文件关键字
+CTRL+x CTRL+k字典查找
+CTRL+x CTRL+f 文件名补全
+CTRL+x CTRL+o全能（Omni）补全
+
