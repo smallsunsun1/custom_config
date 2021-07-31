@@ -1,0 +1,1 @@
+build:generic_gcc --copt=-UNDEBUG 可以使用该方式使得在release模式下仍旧启动assert相关功能
