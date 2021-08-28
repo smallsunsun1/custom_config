@@ -1,1 +1,4 @@
 build:generic_gcc --copt=-UNDEBUG 可以使用该方式使得在release模式下仍旧启动assert相关功能
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7.5 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7.5 100
