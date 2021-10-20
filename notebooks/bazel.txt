@@ -6,3 +6,11 @@ bazel build -- //... -//:xxx (用于过滤编译后者)
 bazel overview (https://docs.bazel.build/versions/4.1.0/bazel-overview.html)
 bazel command line option相关 (https://docs.bazel.build/versions/main/command-line-reference.html)
 bazel best practice (https://docs.bazel.build/versions/main/best-practices.html)
+
+## bazel测试覆盖率报告生成命令
+bazel coverage -s \                                              
+  --instrument_test_targets \
+  --combined_report=lcov //integration_tests/... --javabase=@bazel_tools//tools/jdk:remote_jdk11 \
+--instrumentation_filter="//async/..."
+
+genhtml bazel-out/_coverage/_coverage_report.dat -o test_coverage
